@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>DOM manupulation</h1>
+	<h3>Page color will change after 1 ms</h3>
+
+	<script type="text/javascript">
+		var body = document.querySelector("body");
+		var yellow = false;
+		setInterval(function(){
+			if(yellow){
+				body.style.backgroundColor = "white";
+			}else{
+				body.style.backgroundColor = "yellow";
+			}
+			yellow = !yellow;
+		},1000);
+
+		var h1 = document.querySelector("h1");
+		h1.style.backgroundColor = "red"; 
+	</script>
+</body>
+</html>

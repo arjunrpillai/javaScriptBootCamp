@@ -1,0 +1,20 @@
+<!--To add a lstener,we use a methd caleed eventlistener
+	Syntax:  element.addEventListener(type,functionToCall){} -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <button>Click me</button>
+ <p id="demo"></p>
+
+ <script type="text/javascript">
+ 	var button = document.querySelector("button")
+ 	button.addEventListener("click",function(){
+ 		var para = document.getElementById("demo")
+ 		para.innerHTML= "Someone clicked me"
+ 	}) 
+ </script>
+</body>
+</html>
